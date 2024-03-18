@@ -1,5 +1,98 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Cricket_Application.Models.CreateTeam
+
 @{
+    ViewData["Title"] = "CreateTeam";
 }
+<style>
+
+    /* .control-label {
+                    font-weight:500;
+                    padding:3px;
+                } */
+    .row {
+        place-content: center;
+        padding: 5px;
+    }
+    /*   .col-md-4{
+                    padding:10px;
+                } */
+    form {
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
+    .TeamLogo {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 150px;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <center>
+        <h2>Create Team</h2>
+    </center>
+    <hr />
+
+    <form asp-action="ChangeStatus">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="TeamName" class="control-label">Team A</label>
+                    <select id="Team A" class="form-control">
+                        <option>Select</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                    <div class="form-group" style="display:flex; justify-content:center; margin-top:20px">
+                        <img class="TeamLogo" src="~/lib/view-soccer-gold-cup-field.jpg" />
+                    </div>
+                </div>
+        </div>
+            <div class="col-md-2">
+                <br />
+                <div class="form-group" style="border:1px solid #CDD3D9; border-radius:5px; align-items:center; display:flex;justify-content:center">
+                    <h5 style="place-items:center;padding-top:10px">V/S</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="TeamName" class="control-label">Team B</label>
+                    <select id="Team B" class="form-control">
+                        <option>Select</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                    <div class="form-group" style="display:flex; justify-content:center; margin-top:20px">
+                        <img class="TeamLogo" src="~/lib/view-soccer-gold-cup-field.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="MatchType" class="control-label">Match Type</label>
+                    <select id="MatchType" asp-for="MatchType" class="form-control">
+                        <option>Select</option>
+                        <option value="T20">T20</option>
+                        <option value="ODI">ODI</option>
+                        <option value="Test Match">Test Match</option>
+                       
+                    </select>
+                    <span asp-validation-for="MatchType" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+
+     </form>
+ </body>

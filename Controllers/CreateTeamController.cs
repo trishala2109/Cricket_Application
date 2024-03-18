@@ -4,9 +4,10 @@ namespace Cricket_Application.Controllers
 {
     public class CreateTeamController : Controller
     {
-        public IActionResult Index()
+        public IActionResult CreateTeam()
         {
             return View();
         }
+        
     }
 }
