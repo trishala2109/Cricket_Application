@@ -4,7 +4,7 @@ namespace Cricket_Application.Controllers
 {
     public class FinishMatchController : Controller
     {
-        public IActionResult Index()
+        public IActionResult FinishMatch()
         {
             return View();
         }

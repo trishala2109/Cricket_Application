@@ -1,4 +1,4 @@
-﻿@model Cricket_Application.Models.CreateTeam
+﻿@model Cricket_Application.Models.FinishMatch
 
 @{
     ViewData["Title"] = "FinishMatch";
@@ -45,8 +45,8 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
-                    <input placeholder="Enter Match ID" asp-for="MatchID" class="form-control" />
-                    <span asp-validation-for="MatchID" class="text-danger"></span>
+                    <input placeholder="Enter Match ID" asp-for="MatchId" class="form-control" />
+                    <span asp-validation-for="MatchId" class="text-danger"></span>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
-                    <label asp-for="WinningTeam" class="control-label">Winning Team</label>
+                    <label asp-for="WinningTeam" class="control-label">Match Status</label>
                     <select id="MatchStatus" asp-for="WinningTeam" class="form-control">
                         <option>Select</option>
                         <option value="Right-arm Fast">Right-arm Fast</option>
@@ -112,3 +112,19 @@
 
     </form>
 </body>
+@{
+    var alertMessage = TempData["AlertMessage"] as string;
+}
+
+@if (!string.IsNullOrEmpty(alertMessage))
+{
+    <script>
+        alert('@alertMessage');
+    </script>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
