@@ -19,5 +19,7 @@
         public string BattingTeam {  get; set; }
 
         public string BallingTeam { get; set; }
+
+        
     }
 }
