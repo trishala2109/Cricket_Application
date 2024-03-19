@@ -87,57 +87,57 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
-                    <label asp-for="MatchDateTime" class="control-label">Date and Time</label> 
+                    <label asp-for="MatchDateTime" class="control-label">Date and Time</label>
                     <input asp-for="MatchDateTime" type="datetime-local" class="form-control" />
                     <span asp-validation-for="MatchDateTime" class="text-danger"></span>
                 </div>
             </div>
-       <div class="row">
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label asp-for="MatchType" class="control-label">Match Type</label>
-                    <select id="MatchType" asp-for="MatchType" class="form-control">
-                        <option>Select</option>
-                        <option value="T20">T20</option>
-                        <option value="ODI">ODI</option>
-                        <option value="Test Match">Test Match</option>
-                        <option value="Other Match">Other Match</option>
-                    </select>
-                    <span asp-validation-for="MatchType" class="text-danger"></span>
-                </div>
-            </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label asp-for="BattingTeam" class="control-label">Batting Team</label>
-                    <select id="BattingTeam" asp-for="BattingTeam" class="form-control">
-                        <option>Select</option>
-                        <option value="India">India</option>
-                        <option value="Australia">Australia</option>
-                     
-                    </select>
-                    <span asp-validation-for="BattingTeam" class="text-danger"></span>
-                </div>
-            </div>
+            <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label asp-for="BallingTeam" class="control-label">Balling Team</label>
-                        <select id="BallingTeam" asp-for="BallingTeam" class="form-control">
+                        <label asp-for="MatchType" class="control-label">Match Type</label>
+                        <select id="MatchType" asp-for="MatchType" class="form-control">
                             <option>Select</option>
-                            <option value="India">India</option>
-                            <option value="Australia">Australia</option>
+                            <option value="T20">T20</option>
+                            <option value="ODI">ODI</option>
+                            <option value="Test Match">Test Match</option>
+                            <option value="Other Match">Other Match</option>
                         </select>
-                        <span asp-validation-for="BallingTeam" class="text-danger"></span>
+                        <span asp-validation-for="MatchType" class="text-danger"></span>
                     </div>
                 </div>
-        </div>
-    </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="form-group" style="display:flex; justify-content:center">
-                    <input type="submit" value="Start Match" class="btn btn-primary" />
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label asp-for="BattingTeam" class="control-label">Batting Team</label>
+                            <select id="BattingTeam" asp-for="BattingTeam" class="form-control">
+                                <option>Select</option>
+                                <option value="India">India</option>
+                                <option value="Australia">Australia</option>
+
+                            </select>
+                            <span asp-validation-for="BattingTeam" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label asp-for="BallingTeam" class="control-label">Balling Team</label>
+                            <select id="BallingTeam" asp-for="BallingTeam" class="form-control">
+                                <option>Select</option>
+                                <option value="India">India</option>
+                                <option value="Australia">Australia</option>
+                            </select>
+                            <span asp-validation-for="BallingTeam" class="text-danger"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-     </form>
- </body>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group" style="display:flex; justify-content:center">
+                        <input type="submit" value="Start Match" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+    </form>
+</body>
