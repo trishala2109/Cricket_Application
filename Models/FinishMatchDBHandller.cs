@@ -7,8 +7,7 @@ namespace Cricket_Application.Models
         private void connection()
         {
             string constring = "server=.\\sqlexpress;integrated security=true;database=Cricket_Application";
-            con=new SqlConnection(constring);
-
+            con = new SqlConnection(constring);
         }
 
        
