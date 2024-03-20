@@ -10,16 +10,6 @@
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
 		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
 	</ItemGroup>
-  <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
-=======
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
->>>>>>> 950f97ce435d2d88c9a4552404e91d951cb9c6c6
-=======
->>>>>>> 0cd3438f8598d3509a6f287c9cbc761b95415c39
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
-  </ItemGroup>
+
 
 </Project>
