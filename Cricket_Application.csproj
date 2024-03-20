@@ -7,8 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+
+	  >>>>>>> HEAD
+	  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
 =======
 >>>>>>> 0cd3438f8598d3509a6f287c9cbc761b95415c39
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
